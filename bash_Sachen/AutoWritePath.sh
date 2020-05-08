@@ -8,7 +8,6 @@ files=$( ls * )
 
 arr=($files)
 
-
 for i in {0..13}
 do
    echo "df$i = pd.read_excel('/Users/antongigele/ANNEA/Data/Neunkirchen/SCADA_10Min/Neunkirchen/2016/Year_2016/10_Min_Values_WPNK_Okt_2016/Data_till_17._Nov_2016/${arr[i]}', sep=';',encoding= 'unicode_escape')"
