@@ -4,7 +4,7 @@ LogMessage "Ausgabedatei: das schaffen wir!"
 
 vech="bus"
 
-#print "vehicle is a $vech"
+print "vehicle is a $vech"
 
 if (( $# != 1 )) ; then
     LogMessage "Falsche Parameteranzahl"
