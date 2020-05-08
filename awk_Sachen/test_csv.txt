@@ -1,0 +1,1 @@
+awk -F','  '{ print $1 }' Schoolkidz2.csv
