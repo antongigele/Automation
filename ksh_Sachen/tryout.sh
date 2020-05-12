@@ -1,16 +1,12 @@
-#!/usr/bin/ksh
 
-echo "Positional Parameters"
-echo '$0 = ' $0
-echo '$1 = ' $1
-echo '$2 = ' $2
-echo '$3 = ' $3
-
+LogMessage "Eingabedatei: alles cool"
+LogMessage "Ausgabedatei: das schaffen wir!"
 
 vech="bus"
 
-if (( $# == 1 )); then
-	echo fuck em all
-else
-	echo wichsgurke	
-fi	
+print "vehicle is a $vech"
+
+if (( $# != 1 )) ; then
+    LogMessage "Falsche Parameteranzahl"
+    LogMessage "Aufruf: " `basename $0` "gew_kbez"
+fi
